@@ -1,0 +1,429 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #B6DDE4;
+    /* azul*/
+    --cor2: #F7B153;
+    /* laranja */
+    --cor3: #B35018;
+    /* marrom */
+    --cor4: #03356B;
+    /* azul escuro */
+}
+
+body {
+    background-image: url(images/fundodomar.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--cor1);
+    font-family: "Chewy";
+    color: white;
+}
+/* menu */
+.menugeral {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.945);
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+.menugeral>div {
+    margin-left: auto;
+    height: 100%;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    font-size: 35px;
+}
+
+.menugerallogo {
+    flex-grow: 2;
+    padding: 20px 100px 20px 100px;
+}
+
+.menugeralitem {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-grow: 8;
+    padding: 0px 100px 0px 100px
+}
+
+.menugeralmenu {
+    margin: auto;
+    padding:86px 20px 86px 20px;
+}
+
+.menugeralmenu2 {
+    margin:auto;
+    padding:86px 20px 86px 20px;
+}
+
+.menugeralmenu3 {
+    margin:auto;
+    padding: 86px 20px 86px 20px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.945);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08),inset 0 2px 4px 0 rgba(0,0,0,.08);
+}
+
+.submenu a:hover {
+    background-color: rgba(65, 65, 65, 0.322)
+}
+
+.menugeralmenu:hover .submenu {
+    display: block;
+}
+
+.submenuitemsconfig {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 10%;
+}
+
+.submenuitems {
+    display: flex;
+    width: 33.3%;
+    height: auto;
+    cursor: pointer;
+}
+
+.submenuitems a{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 22px;
+    padding: 20px;
+}
+
+.submenuitems img{
+    width: 60px;
+    height: auto;
+}
+
+.submenuitems figure{
+    width:60px;
+    height: auto;
+    align-items: center;
+    padding-right: 10px;
+}
+
+
+.menugeralitem>div>a {
+    text-decoration: none;
+    color: var(--cor4);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+/*fim do menu */
+
+/* cardapio */
+
+.cardapio {
+    padding: 0px 20px;
+    background-color:var(--cor1);
+    color: black;
+    font-family: arial;
+}
+
+.titulos {
+    width: 100%;
+    padding: 30px 30px 30px 30px;
+    font-size: 48px;
+    color: var(--cor4);
+    font-family: "Chewy";
+}
+
+.subtitulos {
+    width: 100%;
+    font-size: 36px;
+    padding: 30px;
+    color: var(--cor4);
+    font-family: "Chewy";
+}
+
+.produtos {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.produtosconfig {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.produto {
+    width: 33,3%;
+    height: auto;
+    margin: auto;
+}
+
+.produto img {
+    width: 300px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/* fim do cardapio */
+
+
+
+
+
+
+.produtospeixitos {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    background-color: var(--cor1);
+    flex-wrap: wrap;
+}
+
+.produtospeixitos div {
+    width: 33%;
+    float: left;
+    padding: 70px;
+    display: table;
+}
+
+.produtosfotos {
+    width: 275px;
+    height: 183px;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 15px 200px 15px 200px;
+    color: var(--cor4);
+    font-size: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+main {
+    padding-top: 207px;
+}
+
+.section>div {
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+.imgprodutos {
+    width: 500px;
+    flex: 1
+}
+
+.section p {
+    font-size: 40px;
+}
+
+.guia {
+    padding-bottom: 50px;
+    font-size: 22px;
+    flex: 2
+}
+
+.descriçãoprodutos {
+    padding-top: 30px;
+    flex: 3
+}
+
+.descriçãoprodutos p {
+    padding-top: 60px;
+    font-size: 22px;
+}
+
+.descriçãoprodutos h1 {
+    font-family: "Chewy";
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+
+.descriçãoprodutos h5 {
+    font-size: 22px;
+}
+
+.banners div {
+    width: 100%;
+    height: auto;
+    background-color: var(--cor2);
+}
+
+.banners img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    background-color: var(--cor2);
+    padding: 20px 20px 60px 20px;
+    color: black;
+}
+
+.footer>div {
+    margin: 30px;
+
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+dt {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+dd {
+    text-align: left;
+    margin: 0px;
+    padding: 4px;
+    padding-left: 0px;
+}
+
+.menugeralmedia {
+    background-color: var(--cor3);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    display: none;
+}
+
+.menugeralmedialist {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.menugeralmedia li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+.menugeralmedia a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:960px) {
+    main {
+        padding-top: 225px;
+    }
+
+    .menugeral {
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+    }
+
+    .menugeral>div {
+        margin: auto;
+        padding: 0;
+    }
+
+    .menugeralitem>div {
+        padding: 0px 10px 0px 10px;
+        width: 180px;
+        height: 46px;
+    }
+
+
+    .produtospeixitos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .guia {
+        order: -1;
+    }
+
+    .imgprodutos {
+        order: 2
+    }
+
+    .descriçãoprodutos {
+        order: 3
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:600px) {
+    .menugeral {
+        position: static;
+    }
+
+    main {
+        padding-top: 0px;
+    }
+
+
+    .menugerallogo{
+        flex-direction: flex-start;
+    }
+    .menugeralitem {
+        display: none;
+    }
+
+    .menugeralmedia {
+        display: block;
+    }
+
+
+}
