@@ -23,6 +23,7 @@ body {
     font-family: "Chewy";
     color: white;
 }
+
 /* menu */
 .menugeral {
     display: flex;
@@ -47,7 +48,7 @@ body {
 
 .menugerallogo {
     flex-grow: 2;
-    padding: 20px 100px 20px 100px;
+    padding: 10px 100px 10px 100px;
 }
 
 .menugeralitem {
@@ -61,17 +62,17 @@ body {
 
 .menugeralmenu {
     margin: auto;
-    padding:86px 20px 86px 20px;
+    padding: 86px 20px;
 }
 
 .menugeralmenu2 {
-    margin:auto;
-    padding:86px 20px 86px 20px;
+    margin: auto;
+    padding: 86px 20px ;
 }
 
 .menugeralmenu3 {
-    margin:auto;
-    padding: 86px 20px 86px 20px;
+    margin: auto;
+    padding: 86px 20px ;
 }
 
 .submenu {
@@ -82,7 +83,7 @@ body {
     top: 100%;
     left: 0;
     background-color: rgba(255, 255, 255, 0.945);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08),inset 0 2px 4px 0 rgba(0,0,0,.08);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08), inset 0 2px 4px 0 rgba(0, 0, 0, .08);
 }
 
 .submenu a:hover {
@@ -107,7 +108,7 @@ body {
     cursor: pointer;
 }
 
-.submenuitems a{
+.submenuitems a {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -119,13 +120,13 @@ body {
     padding: 20px;
 }
 
-.submenuitems img{
+.submenuitems img {
     width: 60px;
     height: auto;
 }
 
-.submenuitems figure{
-    width:60px;
+.submenuitems figure {
+    width: 60px;
     height: auto;
     align-items: center;
     padding-right: 10px;
@@ -138,89 +139,79 @@ body {
     box-sizing: border-box;
     cursor: pointer;
 }
-/*fim do menu */
+
+/* menu */
+
+/* alinhamento */
+
+main {
+    padding-top: 207px;
+}
+
+nav {
+    padding-top: 219px;
+    margin-left: 80px;
+}
+
+/* alinhamento */
+
+/* nav */
+
+.guiaconfig {
+    padding: 30px 30px 30px 0px;
+    font-size: 22px;
+    width: 100%;
+}
+
+/* nav /*
 
 /* cardapio */
 
 .cardapio {
-    padding: 0px 20px;
-    background-color:var(--cor1);
+    margin: 0px 80px;
+}
+
+.cardapio-title h1 {
     color: black;
-    font-family: arial;
-}
-
-.titulos {
+    font-size: 60px;
+    padding: 50px 50px 50px 0px;
     width: 100%;
-    padding: 30px 30px 30px 30px;
-    font-size: 48px;
-    color: var(--cor4);
-    font-family: "Chewy";
+    height: auto;
 }
 
-.subtitulos {
-    width: 100%;
-    font-size: 36px;
-    padding: 30px;
-    color: var(--cor4);
-    font-family: "Chewy";
+.opções {
+    margin: 0px 15px;
 }
 
-.produtos {
+.opções-config {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: auto;
 }
 
-.produtosconfig {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-}
-
-.produto {
+.opções-config>div{
     width: 33,3%;
-    height: auto;
-    margin: auto;
 }
 
-.produto img {
-    width: 300px;
+.opções-config>div img {
+    width: 400px;
     height: auto;
-    align-items: center;
-    justify-content: center;
 }
 
-/* fim do cardapio */
-
-
-
-
-
-
-.produtospeixitos {
+.opções-config>div a{
     display: flex;
-    width: 100%;
-    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33,3%;
     text-decoration: none;
-    color: white;
-    background-color: var(--cor1);
-    flex-wrap: wrap;
+    color: black;
+    font-size: 30px;
 }
 
-.produtospeixitos div {
-    width: 33%;
-    float: left;
-    padding: 70px;
-    display: table;
-}
-
-.produtosfotos {
-    width: 275px;
-    height: 183px;
-}
+/* cardapio */
 
 .section {
     display: flex;
@@ -232,10 +223,6 @@ body {
     width: 100%;
     box-sizing: border-box;
     font-family: arial;
-}
-
-main {
-    padding-top: 207px;
 }
 
 .section>div {
@@ -252,11 +239,6 @@ main {
     font-size: 40px;
 }
 
-.guia {
-    padding-bottom: 50px;
-    font-size: 22px;
-    flex: 2
-}
 
 .descriçãoprodutos {
     padding-top: 30px;
@@ -290,6 +272,7 @@ main {
     object-fit: cover;
 }
 
+/* footer */
 .footer {
     display: flex;
     flex-direction: row;
@@ -321,6 +304,9 @@ dd {
     padding: 4px;
     padding-left: 0px;
 }
+/* footer */
+
+/* menu media */
 
 .menugeralmedia {
     background-color: var(--cor3);
@@ -339,7 +325,7 @@ dd {
     height: 100%;
 }
 
-.menugeralmedia li{
+.menugeralmedia li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,10 +334,12 @@ dd {
     padding: 0px 10px 0px 10px;
 }
 
-.menugeralmedia a{
+.menugeralmedia a {
     text-decoration: none;
     color: black;
 }
+
+/* menu media */
 
 @media (max-width:960px) {
     main {
@@ -404,6 +392,18 @@ dd {
     }
 }
 
+@media (max-width:768px) {
+
+    .categorias-listas a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categorias-listas-img {
+        margin: auto;
+    }
+}
+
 @media (max-width:600px) {
     .menugeral {
         position: static;
@@ -413,16 +413,38 @@ dd {
         padding-top: 0px;
     }
 
+    nav {
+        padding-top: 0px;
+    }
 
-    .menugerallogo{
+
+    .menugerallogo {
         flex-direction: flex-start;
     }
+
     .menugeralitem {
         display: none;
     }
 
     .menugeralmedia {
         display: block;
+    }
+
+    .categorias-listas {
+        padding: 0px;
+        margin: auto;
+    }
+
+    .categorias-listas li {
+        padding: 10px;
+    }
+
+    .categorias-listas-text {
+        display: none;
+    }
+
+    .categorias-listas-img {
+        margin: auto;
     }
 
 
