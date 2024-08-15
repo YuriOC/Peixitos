@@ -242,6 +242,33 @@ main {
     display: none;
 }
 
+.informaçao-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.911);
+    background-color: white;
+   
+}
+
+.informaçao-produto h1 {
+    font-size: 36px;
+    padding: 30px;
+}
+
+.informaçao-nutricional{
+    width: 100%;
+    font-size: 24px;
+    padding: 30px;
+    border-width: 3px;
+    border-style: solid none;
+    border-color:rgba(0, 0, 0, 0.911)
+}
+
+.informaçao-nutricional div{
+    padding: 15px;
+}
 /* Produtos */
 
 /* banners */
