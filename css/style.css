@@ -249,26 +249,43 @@ main {
     justify-content: center;
     color: rgba(0, 0, 0, 0.911);
     background-color: white;
-   
+    padding: 0 10%;
 }
 
 .informaçao-produto h1 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
     font-size: 36px;
-    padding: 30px;
+    padding: 20px;
+    margin-top: 30px
 }
 
 .informaçao-nutricional{
     width: 100%;
     font-size: 24px;
-    padding: 30px;
+    padding: 30px 10% 30px 10%;
+}
+
+.informaçao-nutricional a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 10%;
     border-width: 3px;
-    border-style: solid none;
+    border-style: solid none none none;
     border-color:rgba(0, 0, 0, 0.911)
 }
 
-.informaçao-nutricional div{
-    padding: 15px;
+.informaçao-nutri-tabela{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20%;
 }
+
 /* Produtos */
 
 /* banners */
