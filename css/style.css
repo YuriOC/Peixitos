@@ -1,5 +1,5 @@
 * {
-    margin:0px;
+    margin: 0px;
 
 }
 
@@ -67,12 +67,12 @@ body {
 
 .menugeralmenu2 {
     margin: auto;
-    padding: 86px 20px ;
+    padding: 86px 20px;
 }
 
 .menugeralmenu3 {
     margin: auto;
-    padding: 86px 20px ;
+    padding: 86px 20px;
 }
 
 .submenu {
@@ -158,6 +158,10 @@ main {
     width: 100%;
 }
 
+.guiaconfig a {
+    color: black;
+}
+
 /* nav /*
 
 /* cardapio */
@@ -180,13 +184,13 @@ main {
 
 .opções-config {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.opções-config>div{
+.opções-config>div {
     width: 240px;
     padding: 15px;
 }
@@ -198,7 +202,7 @@ main {
     max-height: 100%;
 }
 
-.opções-config>div a{
+.opções-config>div a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -210,52 +214,81 @@ main {
 
 /* cardapio */
 
-.section {
+
+/* Produtos */
+
+.produtos {
+    display: flex;
+    align-items: flex-start;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.produtos h1 {
+    width: 100%;
+    font-size: 80px;
+    padding-top: 50px;
+}
+
+.produtos p {
+    font-size: 30px
+}
+
+.produtos-descriçao div {
+    padding: 25px 0;
+}
+
+.produtos-cel {
+    display: none;
+}
+
+.informaçao-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.911);
+    background-color: white;
+    padding: 0 10%;
+}
+
+.informaçao-produto h1 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 36px;
+    padding: 20px;
+    margin-top: 30px
+}
+
+.informaçao-nutricional{
+    width: 100%;
+    font-size: 24px;
+    padding: 30px 10% 30px 10%;
+}
+
+.informaçao-nutricional a{
     display: flex;
     flex-direction: row;
-    margin: 0px;
-    padding: 15px 200px 15px 200px;
-    color: var(--cor4);
-    font-size: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: arial;
+    justify-content: space-between;
+    padding: 30px 10%;
+    border-width: 3px;
+    border-style: solid none none none;
+    border-color:rgba(0, 0, 0, 0.911)
 }
 
-.section>div {
-    box-sizing: border-box;
-    padding: 12px;
+.informaçao-nutri-tabela{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20%;
 }
 
-.imgprodutos {
-    width: 500px;
-    flex: 1
-}
+/* Produtos */
 
-.section p {
-    font-size: 40px;
-}
-
-
-.descriçãoprodutos {
-    padding-top: 30px;
-    flex: 3
-}
-
-.descriçãoprodutos p {
-    padding-top: 60px;
-    font-size: 22px;
-}
-
-.descriçãoprodutos h1 {
-    font-family: "Chewy";
-    font-size: 70px;
-    padding-bottom: 20px;
-}
-
-.descriçãoprodutos h5 {
-    font-size: 22px;
-}
+/* banners */
 
 .banners div {
     width: 100%;
@@ -268,6 +301,8 @@ main {
     height: 100%;
     object-fit: cover;
 }
+
+/* banners */
 
 /* footer */
 .footer {
@@ -301,6 +336,7 @@ dd {
     padding: 4px;
     padding-left: 0px;
 }
+
 /* footer */
 
 /* menu media */
@@ -359,6 +395,8 @@ dd {
         padding-top: 225px;
     }
 
+    /* menu */
+
     .menugeral {
         flex-direction: column;
         position: fixed;
@@ -376,33 +414,47 @@ dd {
         height: 46px;
     }
 
+    /* menu */
 
-    .produtospeixitos {
+    /* produtos */
+
+    .produtos {
+        display: none;
+    }
+
+    .produtos-cel{
         display: flex;
-        flex-wrap: wrap;
-    }
-
-    .section {
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+        color: black;
+        font-size: 30px;
     }
 
-    .guia {
-        order: -1;
+    .produtos-cel div{
+        margin: 15px;
     }
 
-    .imgprodutos {
-        order: 2
+    .produtos-cel h1 {
+        font-size: 80px;
     }
 
-    .descriçãoprodutos {
-        order: 3
+    .produtos-cel img {
+        width:100%;
+        height: auto;
     }
 
+
+    /* produtos */
+
+
+    /* footer */
     .footer {
         display: flex;
         flex-wrap: wrap;
     }
+
+    /* footer */
 }
 
 @media (max-width:768px) {
@@ -427,7 +479,7 @@ dd {
     }
 
     .menugeralmedia600 {
-        display:flex;
+        display: flex;
     }
 
     main {
@@ -445,12 +497,12 @@ dd {
         max-height: 100%;
     }
 
-    .opções-config>div a{
+    .opções-config>div a {
         font-size: 20px;
     }
 
     .opções-config>div {
-        width:120px;
+        width: 120px;
     }
 
     .menugerallogo {
@@ -484,7 +536,7 @@ dd {
 
     .cardapio-title h1 {
         text-align: center;
-}
+    }
 
 
 }
