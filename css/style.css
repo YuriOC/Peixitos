@@ -250,6 +250,7 @@ main {
     color: rgba(0, 0, 0, 0.911);
     background-color: white;
     padding: 0 10%;
+    font-family: arial;
 }
 
 .informaçao-produto h1 {
@@ -270,7 +271,7 @@ main {
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgb(141, 141, 141);
-    width: 100%
+    width: 100%;
 }
 
 .menu-nutri {
@@ -298,6 +299,8 @@ main {
 .menu-nutri-info {
     display: none;
     width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 .menu-nutri:checked+.menu-nutri-menu+.menu-nutri-info {
@@ -335,6 +338,10 @@ main {
 
 .menu-alerg-info {
     display: none;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 20px 0;
 }
 
 .menu-alerg:checked+.menu-alerg-menu+.menu-alerg-info {
@@ -356,8 +363,75 @@ main {
 }
 
 .table-summary-item {
-    padding: 15px;
-   ;
+    padding: 0 25px;
+}
+
+.table-summary-item h3 {
+    display: flex;
+    font-size: 38px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    justify-content: center;
+}
+
+.table-summary-item p {
+    display: flex;
+    font-size: 14px;
+    font-weight: 200;
+    justify-content: center;
+}
+
+.table-row-title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px dotted rgb(141, 141, 141);
+    padding: 10px;
+    font-weight: 900;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    border-bottom: 1px dotted rgb(141, 141, 141);
+    padding: 10px;
+}
+
+.table-column-1 {
+    width: 50%;
+    align-items: flex-start;
+
+}
+
+.table-column-2 {
+    width: 25%;
+    align-items: flex-start;
+
+}
+
+.table-column-3 {
+    display: flex;
+    width: 25%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.legenda {
+    white-space: pre-line;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.menu-alerg-info h3 {
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    justify-content: center;
 }
 
 /* tabelas */
