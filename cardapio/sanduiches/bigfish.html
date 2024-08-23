@@ -121,20 +121,227 @@
             </div>
         </section>
         <div class="informaçao-produto">
-                <h1>Informação do Produto</h1>
-            <div class="informaçao-nutricional">
-                <div>
-                    <a><h2>Informação Nutricional</h2><i class="fa-solid fa-angle-down"></i></a>
-                    <div class="informaçao-nutri-tabela">
-                        <div></div>
+            <h1>Informação do Produto</h1>
+            <!--Menu da info nutricional-->
+            <div class="nutri">
+                <input type="checkbox" id="nutri" class="menu-nutri">
+                <label for="nutri" class="menu-nutri-menu">
+                    <a>
+                        <p>Informação Nutricional</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </label>
+                <div class="menu-nutri-info">
+                    <div class="table-summary">
+                        <div class="table-summary-item">
+                            <h3>628kcal</h3>
+                            <p>Calorias</p>
+                        </div>
+                        <div class="table-summary-item">
+                            <h3>25g</h3>
+                            <p>Gordura total</p>
+                        </div>
+                        <div class="table-summary-item">
+                            <h3>42g</h3>
+                            <p>Carboidratos</p>
+                        </div>
+                        <div class="table-summary-item">
+                            <h3>14g</h3>
+                            <p>Proteínas</p>
+                        </div>
+                    </div>
+                    <div class="table-row-config">
+                        <div class="table-row-title">
+                            <div class="table-column-1">
+                                <p>Informação Nutricional</p>
+                            </div>
+                            <div class="table-column-2">
+                                <p>Por Porção</p>
+                            </div>
+                            <div class="table-column-3">
+                                <p>*VD%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row-config">
+                        <div class="table-row">
+                            <div class="table-column-1">
+                                <p>Calorias</p>
+                            </div>
+                            <div class="table-column-2">
+                                <p>628 kcal</p>
+                            </div>
+                            <div class="table-column-3">
+                                <p>25%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row-config">
+                        <div class="table-row">
+                            <div class="table-column-1">
+                                <p>Carboidratos</p>
+                            </div>
+                            <div class="table-column-2">
+                                <p>42g</p>
+                            </div>
+                            <div class="table-column-3">
+                                <p>14%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row-config">
+                        <div class="table-row">
+                            <div class="table-column-1">
+                                <p>Açúcares totais</p>
+                            </div>
+                            <div class="table-column-2">
+                                <p>9.7g</p>
+                            </div>
+                            <div class="table-column-3">
+                                <p>**</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row-config">
+                        <div class="table-row">
+                            <div class="table-column-1">
+                                <p>Açúcares adicionados</p>
+                            </div>
+                            <div class="table-column-2">
+                                <p>42g</p>
+                            </div>
+                            <div class="table-column-3">
+                                <p>14%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row-config">
+                        <div class="table-row">
+                            <div class="table-column-1">
+                                <p>Proteínas</p>
+                            </div>
+                            <div class="table-column-2">
+                                <p>14g</p>
+                            </div>
+                            <div class="table-column-3">
+                                <p>52%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row-config">
+                        <div class="table-row">
+                            <div class="table-column-1">
+                                <p>Gordura total</p>
+                            </div>
+                            <div class="table-column-2">
+                                <p>25g</p>
+                            </div>
+                            <div class="table-column-3">
+                                <p>39%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row-config">
+                        <div class="table-row">
+                            <div class="table-column-1">
+                                <p>Gorduras saturadas</p>
+                            </div>
+                            <div class="table-column-2">
+                                <p>42g</p>
+                            </div>
+                            <div class="table-column-3">
+                                <p>14%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-row-config">
+                        <div class="table-row">
+                            <div class="table-column-1">
+                                <p>Gordura <i>trans</i></p>
+                            </div>
+                            <div class="table-column-2">
+                                <p>9.9g</p>
+                            </div>
+                            <div class="table-column-3">
+                                <p>49%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row-config">
+                        <div class="table-row">
+                            <div class="table-column-1">
+                                <p>Fibra alimentar</p>
+                            </div>
+                            <div class="table-column-2">
+                                <p>3.7g</p>
+                            </div>
+                            <div class="table-column-3">
+                                <p>15%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row-config">
+                        <div class="table-row">
+                            <div class="table-column-1">
+                                <p>Sódio</p>
+                            </div>
+                            <div class="table-column-2">
+                                <p>866.67mg</p>
+                            </div>
+                            <div class="table-column-3">
+                                <p>43%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="legenda">
+                        <p>Referência: ANVISA. RDC Nº 360, DE 23 DE DEZEMBRO DE 2003.
+                            Regulamento técnico sobre rotulagem nutricional de alimentos embalados.
+
+                            *VD: % Valores Diários de referência com base em uma dieta de 2.000 kcal ou 8.400 kJ. Seus
+                            valores diários podem ser maiores ou menores, dependendo de suas necessidades energéticas.
+                            **VD não estabelecido.
+                            ***O peso dos produtos, individualmente, pode oscilar na sua montagem, afetando para mais ou
+                            para menos os valores informados na tabela.
+
+                            Observações:
+                            - A dosagem de xarope dos refrigerantes é fornecida conforme especificação dos fabricantes
+                            para bebidas com gelo.
+                            - Os resultados nutricionais expressos nas tabelas foram obtidos a partir de cálculos
+                            teóricos ou análises bromatológicas realizadas pelo levantamento do peso médio de cada um
+                            dos
+                            ingredientes que compõem os produtos Peixitos.
+                            - Os valores nutricionais de todos os ingredientes são de responsabilidade dos respectivos
+                            fornecedores.
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <a><h2>Informação de Alergênicos</h2><i class="fa-solid fa-angle-down"></i></a>
-                    <div></div>
+            </div>
+            <div class="alerg">
+                <input type="checkbox" id="alerg" class="menu-alerg">
+                <label for="alerg" class="menu-alerg-menu">
+                    <a>
+                        <p>Informação de Alérgeno</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </label>
+                <div class="menu-alerg-info">
+                    <div class="">
+                        <h3>Esse produto contém</h3>
+                        <div>
+
+                        </div>
+                        <div class="legenda">
+                            <p>
+                                Referência: ANVISA. RDC N° 26, DE 02 DE JULHO DE 2015, RDC N° 136, de 8 de fevereiro de 2017 e LEI Nº 10.674, DE 16 DE MAIO DE 2003. 
+
+                                A tabela acima corresponde aos alérgenos presentes ou que podem estar presentes na composição dos itens do menu, de acordo com as informações de nossos fornecedores. Eventualmente, é possível encontrar traços de alérgenos em produtos que, originalmente, não os contêm, devido ao compartilhamento da área de preparo. Dessa forma, todos os itens do menu podem conter ovo, leite, soja, trigo, aveia, centeio, cevada, amendoim, amêndoa, castanhas, castanha-do-pará, macadâmia, castanha-de-caju, nozes, pistache, avelã, lactose e glúten.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+
     </main>
     <footer>
         <div class="footer">
