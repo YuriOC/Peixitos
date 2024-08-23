@@ -276,7 +276,6 @@ main {
 
 .menu-nutri {
     display: none;
-    box-sizing: border-box;
 }
 
 .menu-nutri-menu {
@@ -303,8 +302,8 @@ main {
     max-width: 700px;
 }
 
-.menu-nutri:checked+.menu-nutri-menu+.menu-nutri-info {
-    display: block
+.menu-nutri:checked~.menu-nutri-info {
+    display: block;
 }
 
 .alerg {
