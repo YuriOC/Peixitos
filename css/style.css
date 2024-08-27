@@ -429,8 +429,32 @@ main {
     display: flex;
     font-size: 24px;
     font-weight: 700;
-    padding-bottom: 5px;
+    padding-bottom: 25px;
     justify-content: center;
+    border-bottom: 1px dotted rgb(141, 141, 141);
+}
+
+.table-alerg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.table-alerg-item {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px dotted rgb(141, 141, 141);
+    background-color: rgb(228, 226, 226);
+}
+
+.table-alerg-item img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
 }
 
 /* tabelas */
