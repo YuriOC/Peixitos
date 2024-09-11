@@ -1,0 +1,150 @@
+@media (max-width:960px) {
+    main {
+        padding-top: 225px;
+    }
+
+    /* menu */
+
+    .menugeral {
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+    }
+
+    .menugeral>div {
+        margin: auto;
+        padding: 0;
+    }
+
+    .menugeralitem>div {
+        padding: 0px 10px 0px 10px;
+        width: 180px;
+        height: 46px;
+    }
+
+    /* menu */
+
+    /* produtos */
+
+    .produtos {
+        display: none;
+    }
+
+    .produtos-cel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 30px;
+    }
+
+    .produtos-cel div {
+        margin: 15px;
+    }
+
+    .produtos-cel h1 {
+        font-size: 80px;
+    }
+
+    .produtos-cel img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* produtos */
+
+
+    /* footer */
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* footer */
+}
+
+@media (max-width:768px) {
+
+    .categorias-listas a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categorias-listas-img {
+        margin: auto;
+    }
+
+    .opções-config>div img {
+        width: 200px;
+    }
+}
+
+@media (max-width:600px) {
+    .menugeral {
+        display: none;
+    }
+
+    .menugeralmedia600 {
+        display: flex;
+    }
+
+    main {
+        padding-top: 0px;
+    }
+
+    nav {
+        padding-top: 0px;
+    }
+
+    .opções-config>div img {
+        width: 120px;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .opções-config>div a {
+        font-size: 20px;
+    }
+
+    .opções-config>div {
+        width: 120px;
+    }
+
+    .menugerallogo {
+        flex-direction: flex-start;
+    }
+
+    .menugeralitem {
+        display: none;
+    }
+
+    .menugeralmedia {
+        display: block;
+    }
+
+    .categorias-listas {
+        padding: 0px;
+        margin: auto;
+    }
+
+    .categorias-listas li {
+        padding: 10px;
+    }
+
+    .categorias-listas-text {
+        display: none;
+    }
+
+    .categorias-listas-img {
+        margin: auto;
+    }
+
+    .cardapio-title h1 {
+        text-align: center;
+    }
+
+
+}
