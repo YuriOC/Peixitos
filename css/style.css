@@ -75,6 +75,11 @@ body {
     padding: 86px 20px;
 }
 
+.menugeralmenu4 {
+    margin: auto;
+    padding: 86px 20px;
+}
+
 .submenu {
     display: none;
     position: absolute;
@@ -562,4 +567,3 @@ dd {
 }
 
 /* menu media */
-
