@@ -19,19 +19,32 @@
             <h1>Vem pro Clube Peixitos!</h1>
         </div>
         <div class="formulario">
-            <div>
-                <h4>Fazer login com</h4>
-                <div></div>
-                <h4>Ou use seu endereço de email</h4>
+            <h4>Fazer login com</h4>
+            <div class="button">
+                <button><img class="logo" src="images/googlelogo.png"><span>Google</span></button>
+                <button><i class="fa-brands fa-facebook-f fa-lg"
+                        style="color: #0866ff;"></i><span>Facebook</span></button>
+                <button><i class="fa-brands fa-apple fa-xl" style="color: #000000;"></i><span>Apple ID</span></button>
             </div>
-            <div>
+            <h4>ou use seu endereço de email</h4>
+            <div class="form-login">
                 <form class="login">
-                    <label for="user">Email</label>
-                    <input type="email" name="user" id="user">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="senha">
+                    <fieldset>
+                        <div class="form-input">
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" method="post" placeholder="*Email" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="password"></label>
+                            <input type="password" name="password" id="password" method="post" required
+                                placeholder="*Senha">
+                        </div>
+                        <a href="index.html">Esqueceu sua Senha?</a>
+                    </fieldset>
                 </form>
             </div>
+            <button class="entrar" type="submit">Entrar</button>
+            <a href="index.html">Ainda não tenho conta</a>
         </div>
     </section>
 </body>
