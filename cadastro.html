@@ -31,19 +31,21 @@
                 <form class="login">
                     <fieldset>
                         <div class="form-input">
-                            <label for="email"></label>
                             <input type="email" name="email" id="email" method="post" placeholder="*Email" required>
+                            <label class="form-email" for="email">Email</label>
                         </div>
                         <div class="form-input">
-                            <label for="password"></label>
                             <input type="password" name="password" id="password" method="post" required
                                 placeholder="*Senha">
+                            <label class="form-password" for="password">Senha</label>
                         </div>
-                        <a href="index.html">Esqueceu sua Senha?</a>
+                        <div>
+                            <a href="index.html">Esqueceu sua Senha?</a>
+                        </div>
+                        <div><input class="entrar" type="submit" value="Entrar"></button></div>
                     </fieldset>
                 </form>
             </div>
-            <button class="entrar" type="submit">Entrar</button>
             <a href="index.html">Ainda não tenho conta</a>
         </div>
     </section>

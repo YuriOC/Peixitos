@@ -83,6 +83,7 @@ fieldset{
 }
 
 .form-input {
+    position: relative;
     border: none;
     margin-bottom: 30px;
 }
@@ -95,5 +96,30 @@ fieldset{
 }
 
 .entrar {
-    margin: 30px 0px;
+    display: flex;
+    margin: 30px auto;
+    padding: 20px 50px;
+    justify-content: center;
+}
+
+.form-email {
+    display: none;
+    position: absolute;
+    top:-15px;
+    font-size: 12px
+}
+
+.form-password {
+    display: none;
+    position: absolute;
+    top:-15px;
+    font-size: 12px
+}
+
+input:not(:placeholder-shown)+.form-email {
+    display: block;
+}
+
+input:not(:placeholder-shown)+.form-password {
+    display: block;
 }
