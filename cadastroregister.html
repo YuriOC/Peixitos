@@ -16,10 +16,10 @@
 <body>
     <section>
         <div class="title">
-            <h1>Entrar no Clube Peixitos!</h1>
+            <h1>Vem pro Clube Peixitos!</h1>
         </div>
         <div class="formulario">
-            <h4>Fazer login com</h4>
+            <h4>Cadastre-se com</h4>
             <div class="button">
                 <button><img class="logo" src="images/googlelogo.png"><span>Google</span></button>
                 <button><i class="fa-brands fa-facebook-f fa-lg"
@@ -38,12 +38,34 @@
                             <input type="password" name="password" id="password" method="post" required
                                 placeholder="*Senha">
                             <label class="form-password" for="password">Senha</label>
+                            <span class="oculto"><i class="fa-regular fa-eye"></i></span>
                         </div>
-                        <div>
-                            <a href="index.html">Esqueceu sua Senha?</a>
+                        <div class="form-input">
+                            <input type="password" name="password" id="password" method="post" required
+                                placeholder="*Confirmar Senha">
+                            <label class="form-password" for="password">Confirmar Senha</label>
                         </div>
-                        <div><input class="entrar" type="submit" value="Entrar"></button></div>
-                    </fieldset>
+                        <div class="form-doc">
+                            <div class="form-doc-config">
+                                <label for="selectdoc"></label>
+                                <div class="docs-s">
+                                    <select name="selectdoc" id="selectdoc">
+                                        <option value="CPF">CPF</option>
+                                        <option value="CNPJ">CNPJ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="docs-t">
+                                    <input type="text" name="textdoc" id="textdoc" method="post" required
+                                        placeholder="*Documento">
+                                    <label for="textdoc"></label>
+                                </div>
+                            </div>
+                        </div>
+                </form>
+                <div><input class="entrar" type="submit" value="Entrar"></button></div>
+                </fieldset>
                 </form>
             </div>
             <a href="index.html">Ainda não tenho conta</a>
