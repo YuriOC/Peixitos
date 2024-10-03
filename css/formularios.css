@@ -290,3 +290,16 @@ input:not(:placeholder-shown)+.textdoc {
     margin-bottom: 30px;
     width: 33%;
 }
+
+.jobsubtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.aviso {
+}
+
+.enviar {
+margin-top: 10px;
+}
