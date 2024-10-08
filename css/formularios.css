@@ -8,7 +8,13 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px 160px;
+    margin: auto;
+    width: 960px;
+}
+
+.pageconfig {
+    margin: auto;
+    width: 960px;
 }
 
 .title {
@@ -155,7 +161,7 @@ fieldset{
     width: 100%;
     border: none;
     border-bottom: 1px solid rgb(141, 141, 141);
-    padding: 16px;
+    padding: 16px 0px 16px 16px;
 
 }
 
@@ -216,9 +222,7 @@ input:not(:placeholder-shown)+.textdoc {
     display: block;
 }
 
-.pageconfig {
-    margin: 30px 500px;
-}
+
 
 .jobtitle {
     display: flex;
@@ -228,17 +232,11 @@ input:not(:placeholder-shown)+.textdoc {
     margin-bottom: 50px;
 }
 
-.jobsubtitle {
-    font-size: 12px;
-    margin-bottom: 30px;
-    width: 100%;
-}
-
 .job {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin: auto;
     align-items: center;
     width: 100%;
 }
@@ -297,9 +295,10 @@ input:not(:placeholder-shown)+.textdoc {
     width: 100%;
 }
 
-.aviso {
+.jobsubtitle2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
-.enviar {
-margin-top: 10px;
-}
+
