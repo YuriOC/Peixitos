@@ -3,7 +3,7 @@ body {
 }
 
 
-section {
+.cadastroconfig {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +19,7 @@ section {
 
 .title {
     font-size: 48px;
+    text-align: center;
 }
 
 .formulario {
@@ -42,21 +43,21 @@ section {
     flex-direction: column;
 }
 
-h4 {
-    font-size: 36px;
-    justify-content: center;
-    align-items: center;
+.subtitle {
+    font-size: 18px;
+    text-align: center;
     font-weight: 100;
 }
 
-.button {
+.buttonconfig {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
-button {
+.button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,19 +67,34 @@ button {
     height: 50px;
 }
 
-button span {
+.button span {
     margin-left: 10px;
     font-size: 14px
-}
-
-i {
-    width: 20px;
 }
 
 .logo {
     width: 20px;
     height: 20px;
 }
+
+.google {
+    background-image: url(../images/google.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background-image: url(../images/facebook.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.apple {
+    background-image: url(../images/apple.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 .email {
     width: 100%;

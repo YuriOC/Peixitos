@@ -63,7 +63,119 @@
     }
 
     /* footer */
+
+    /* trabalhe conosco */
+
+    .pageconfig {
+        margin: auto;
+        width: 100%;
+    }
+
+    .jobtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .job-form {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .job-endereço {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .job-endereço1 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .job-endereço2 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .job-endereço3 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    /* trabalhe conosco */
+
+    /* cadastro */
+
+    .title {
+        font-size: 24px;
+        text-align: center;
+        margin: 40px 0px 60px 0px
+    }
+
+    .subtitle {
+        font-size: 12px;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    .cadastroconfig {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .buttonconfig {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .button {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        width: 100%;
+        height: 60px;
+    }
+
+    .logo {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 20px;
+    }
+
+    .entrar {
+        display: flex;
+        margin: 30px auto;
+        padding: 20px 50px;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+    }
 }
+
 
 @media (max-width:768px) {
 
