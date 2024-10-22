@@ -60,22 +60,7 @@ body {
     padding: 0px 100px 0px 100px
 }
 
-.menugeralmenu {
-    margin: auto;
-    padding: 86px 20px;
-}
-
-.menugeralmenu2 {
-    margin: auto;
-    padding: 86px 20px;
-}
-
-.menugeralmenu3 {
-    margin: auto;
-    padding: 86px 20px;
-}
-
-.menugeralmenu4 {
+.menugeralmenu, .menugeralmenu2,.menugeralmenu3,.menugeralmenu4 {
     margin: auto;
     padding: 86px 20px;
 }

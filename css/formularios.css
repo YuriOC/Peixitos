@@ -3,23 +3,23 @@ body {
 }
 
 
+.cadastroconfig, .pageconfig {
+    width: 100%;
+    max-width: 960px;
+    padding: 0 15px;
+    margin: auto;
+  }
+
 .cadastroconfig {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    width: 960px;
-}
-
-.pageconfig {
-    margin: auto;
-    width: 960px;
 }
 
 .title {
-    font-size: 48px;
-    text-align: center;
+    font-size: 1.5rem;
+    margin: 2.5rem 0 3.75rem 0;
 }
 
 .formulario {
@@ -44,7 +44,7 @@ body {
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 0.75rem;
     text-align: center;
     font-weight: 100;
 }
@@ -242,12 +242,11 @@ input:not(:placeholder-shown)+.hidden-label {
     display: block;
 }
 
-
 .jobtitle {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 50px;
 }
 
@@ -281,35 +280,26 @@ input:not(:placeholder-shown)+.hidden-label {
     height: 40px;
 }
 
-.job-endereço {
+.job-endereço, .job-endereço1, .job-endereço2, .job-endereço3 {
     position: relative;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
+}
+
+.job-endereço {
     width: 50%;
 }
 
 .job-endereço1 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
     width: 30%;
 }
 
 .job-endereço2 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
     width: 20%;
 }
 
 .job-endereço3 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
     width: 33%;
 }
 
@@ -325,11 +315,7 @@ input:not(:placeholder-shown)+.hidden-label {
     width: 100%;
 }
 
-.radio input{
-    margin-bottom: 10px;
-}
-
-.checkbox input{
+.radio input, .checkbox input{
     margin-bottom: 10px;
 }
 
@@ -346,4 +332,8 @@ input:not(:placeholder-shown)+.hidden-label {
     border-bottom: 1px solid rgb(141, 141, 141);
     padding: 15px 15px 15px 0px;
     cursor: pointer;
+}
+
+.visually-hidden{
+    display:none;
 }

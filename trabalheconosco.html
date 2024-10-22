@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Peixitos,comida,peixe">
-    <meta name="discription" content="Restaurante de peixes">
+    <meta name="description" content="Restaurante de peixes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/peixitosminipng.png">
     <link rel="stylesheet" type="text/css" href="css/formularios.css">
@@ -63,7 +63,7 @@
                 <div class="job-form">
                     <div class="job-input">
                         <label class="selectdoc" for="escolaridade">Escolaridade</label>
-                        <select name="escolaridade" id="escolaridade">
+                        <select name="escolaridade" id="escolaridade" required>
                             <option value="escolaridade">Ensino médio incompleto</option>
                             <option value="escolaridade">Ensino médio completo</option>
                             <option value="escolaridade">Ensino superior incompleto</option>
@@ -116,7 +116,7 @@
                 <div class="jobsubtitle">
                     <h1>Disponibilidade de Horário</h1>
                 </div>
-                <div class="checkbox">
+                <div class="checkbox" required>
                     <p><strong>Marque uma ou mais opções.</strong></p>
                     <input type="checkbox" id="manha" name="man">
                     <label for="manha">Manhã</label><br>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="radio">
                     <p><strong>Marque uma opção.</strong></p>
-                    <input type="radio" id="ADM" name="vagas" value="Administrativo">
+                    <input type="radio" id="ADM" name="vagas" value="Administrativo" required>
                     <label for="ADM">Administrativo</label><br>
                     <input type="radio" id="ATEND" name="vagas" value="Atendimento">
                     <label for="ATEND">Atendimento</label><br>
@@ -157,7 +157,7 @@
                     </ol>
                     <p class="aviso">Alguns dispositivos não permitem a gravação de vídeo do formulário, anexe um vídeo
                         gravado anteriormente.</p>
-                    <input type="file" name="video" id="video" required>
+                        <input type="file" name="video" id="video" accept="video/*" max="100000000" required>
                 </div>
                 <input type="submit" id="submit" class="entrar" value="Entrar">
             </form>

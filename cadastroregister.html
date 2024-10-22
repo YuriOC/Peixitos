@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Peixitos,comida,peixe">
-    <meta name="discription" content="Restaurante de peixes">
+    <meta name="description" content="Restaurante de peixes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/peixitosminipng.png">
     <link rel="stylesheet" type="text/css" href="css/formularios.css">
@@ -22,28 +22,36 @@
         <div class="formulario">
             <h4>Cadastre-se com</h4>
             <div class="buttonconfig">
-                <button class="button"><span class="logo google"></span><span>Google</span></button>
-                <button class="button"><span class="logo facebook"></span><span>Facebook</span></button>
-                <button class="button"><span class="logo apple"></span><span>Apple ID</span></button>
+                <button type="button" class="button" aria-label="Entrar com Google">
+                    <span class="logo google" aria-hidden="true"></span>
+                    <span>Google</span>
+                </button>
+                <button type="button" class="button" aria-label="Entrar com Facebook">
+                    <span class="logo facebook" aria-hidden="true"></span>
+                    <span>Facebook</span>
+                </button>
+                <button type="button" class="button" aria-label="Entrar com Apple ID">
+                    <span class="logo apple" aria-hidden="true"></span>
+                    <span>Apple ID</span>
+                </button>
             </div>
             <h4>ou use seu endereço de email</h4>
             <div class="form-login">
-                <form class="login">
+                <form class="login" id="registration-form">
                     <fieldset>
                         <div class="form-input">
                             <input type="email" name="email" id="email" method="post" placeholder="*Email" required>
                             <label class="form-email" for="email">Email</label>
                         </div>
                         <div class="form-input">
-                            <input type="password" name="password" id="password" method="post" required
-                                placeholder="*Senha">
+                            <input type="password" name="password" id="password" method="post" required placeholder="*Senha" minlength="8" pattern="\d{11}|\d{14}">
                             <label class="form-password" for="password">Senha</label>
                             <span class="oculto"><i class="fa-regular fa-eye"></i></span>
                         </div>
                         <div class="form-input">
-                            <input type="password" name="password" id="password" method="post" required
+                            <input type="password" name="confirm-password" id="confirm-password" method="post" required
                                 placeholder="*Confirmar Senha">
-                            <label class="form-password" for="password">Confirmar Senha</label>
+                            <label class="form-password" for="confirm-password">Confirmar Senha</label>
                         </div>
                         <div class="form-doc">
                             <div class="form-doc-config">
@@ -58,38 +66,34 @@
                             <div class="form-doc-config-t">
                                 <div class="docs-t">
                                     <input type="text" name="textdoc" id="textdoc" method="post" required
-                                        placeholder="*Documento">
+                                        placeholder="*Documento" pattern="\d{11}|\d{14}">
                                     <label class="textdoc" for="textdoc">Documento</label>
                                 </div>
                             </div>
                         </div>
                         <div class="form-checks">
-                            <input type="checkbox" name="termos" id="termos" required>
-                            <label for="termos">Ao se registrar, está aceitando os <a href="index.html">Termos e
-                                    Condições de Uso</a> e a <a href="index.html">Política de Privacidade do
-                                    Peixitos</a></label>
+                            <input type="checkbox" name="termos" id="termos" required aria-describedby="termos-desc" required>
+                            <label for="termos">Ao se registrar, está aceitando os <a href="index.html" target="_blank">Termos e Condições de Uso</a> e a <a href="index.html" target="_blank">Política de Privacidade do Peixitos</a></label>
+                            <p class="visually-hidden" id="termos-desc">Leia nossos <a href="index.html" target="_blank">Termos e Condições de Uso</a> e a <a href="index.html" target="_blank">Política de Privacidade do Peixitos</a></p>
                         </div>
                         <div class="form-checks">
-                            <input type="checkbox" name="email-offer" id="email-offer">
-                            <label for="email-offer">Estou de acordo em receber comunicações de marketing por
-                                e-mail</label>
+                            <input type="checkbox" name="email-offer" id="email-offer" aria-describedby="email-offer-desc">
+                            <label for="email-offer">Estou de acordo em receber comunicações de marketing por e-mail</label>
+                            <p id="email-offer-desc" class="visually-hidden">Você receberá emails com ofertas e novidades do Peixitos</p>
                         </div>
                         <div class="form-checks">
-                            <input type="checkbox" name="usercpf" id="usercpf">
-                            <label for="usercpf">Concordo que o Clube PX utilize meu CPF, também indicado nos
-                                Restaurantes Peixitos, para oferecer produtos, serviços e ofertas personalizadas, tudo
-                                de acordo com a <a href="index.html">Política de Privacidade do Peixitos</a></label>
+                            <input type="checkbox" name="usercpf" id="usercpf" aria-describedby="usercpf-desc">
+                            <label for="usercpf">Concordo com o uso do meu CPF para ofertas personalizadas</label>
+                            <p class="visually-hidden" id="usercpf-desc">Concordo que o Clube PX utilize meu CPF, também indicado nos Restaurantes Peixitos, para oferecer produtos, serviços e ofertas personalizadas, tudo de acordo com a <a href="index.html" target="_blank">Política de Privacidade do Peixitos</a></p>
                         </div>
-                </form>
-                <div>
-                    <input class="entrar" type="submit" value="Entrar">
-                </div>
-                </fieldset>
+                        <div>
+                            <input class="entrar" type="submit" value="Entrar">
+                        </div>
+                    </fieldset>
                 </form>
             </div>
             <a href="cadastro.html">Já sou Cadastrado</a>
         </div>
-    </section>
 </body>
 
 </html>
