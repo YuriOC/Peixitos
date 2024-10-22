@@ -238,6 +238,9 @@ input:not(:placeholder-shown)+.textdoc {
     display: block;
 }
 
+input:not(:placeholder-shown)+.hidden-label {
+    display: block;
+}
 
 
 .jobtitle {
@@ -258,6 +261,7 @@ input:not(:placeholder-shown)+.textdoc {
 }
 
 .job-form {
+    position: relative;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
@@ -278,6 +282,7 @@ input:not(:placeholder-shown)+.textdoc {
 }
 
 .job-endereço {
+    position: relative;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
@@ -285,6 +290,7 @@ input:not(:placeholder-shown)+.textdoc {
 }
 
 .job-endereço1 {
+    position: relative;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
@@ -292,6 +298,7 @@ input:not(:placeholder-shown)+.textdoc {
 }
 
 .job-endereço2 {
+    position: relative;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
@@ -299,6 +306,7 @@ input:not(:placeholder-shown)+.textdoc {
 }
 
 .job-endereço3 {
+    position: relative;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
@@ -307,7 +315,7 @@ input:not(:placeholder-shown)+.textdoc {
 
 .jobsubtitle {
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     width: 100%;
 }
 
@@ -317,4 +325,25 @@ input:not(:placeholder-shown)+.textdoc {
     width: 100%;
 }
 
+.radio input{
+    margin-bottom: 10px;
+}
 
+.checkbox input{
+    margin-bottom: 10px;
+}
+
+
+.hidden-label {
+    display: none;
+    position: absolute;
+    top:-15px;
+    font-size: 12px;
+}
+
+.job-input select{
+    border: none;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    padding: 15px 15px 15px 0px;
+    cursor: pointer;
+}

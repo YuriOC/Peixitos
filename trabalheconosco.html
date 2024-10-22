@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -26,51 +26,52 @@
                 </div>
                 <div class="job-form">
                     <div class="job-input">
-                        <input type="text" name="name" id="name" placeholder="*Nome">
-                        <label>
-                        </label>
+                        <input type="text" name="nome" id="nome" placeholder="*Nome" required>
+                        <label for="nome" class="hidden-label">Nome</label>
                     </div>
                 </div>
                 <div class="job-form">
                     <div class="job-input">
-                        <input type="text" name="sobrenome" id="sobrenome" placeholder="*Sobrenome">
-                        <label>
-                        </label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="*Sobrenome" required>
+                        <label for="sobrenome" class="hidden-label">Sobrenome</label>
                     </div>
                 </div>
                 <div class="job-form">
                     <div class="job-input">
-                        <input placeholder="*CPF">
-                        <label>
-                        </label>
+                        <input type="text" name="cpf" id="cpf" placeholder="*CPF" pattern="^\d{11}$" required>
+                        <label for="cpf" class="hidden-label">CPF</label>
                     </div>
                 </div>
                 <div class="job-form">
                     <div class="job-input">
-                        <input placeholder="*Data de Nascimento">
-                        <label>
-                        </label>
+                        <input type="date" name="nascimento" id="nascimento" placeholder="*Data de Nascimento" required>
+                        <label for="nascimento" class="hidden-label">Data de Nascimento</label>
                     </div>
                 </div>
                 <div class="job-form">
                     <div class="job-input">
-                        <input placeholder="*Email">
-                        <label>
-                        </label>
+                        <input type="email" name="email" id="email" placeholder="*Email" required>
+                        <label for="email" class="hidden-label">Email</label>
                     </div>
                 </div>
                 <div class="job-form">
                     <div class="job-input">
-                        <input placeholder="*Celular">
-                        <label>
-                        </label>
+                        <input type="tel" id="cel" name="cel" placeholder="*Celular: (xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{5}-\d{4}$" required>
+                        <label for="cel" class="hidden-label">Celular:(xx)xxxxx-xxxx</label>
                     </div>
                 </div>
                 <div class="job-form">
                     <div class="job-input">
-                        <input placeholder="*Escolaridade">
-                        <label>
-                        </label>
+                        <label class="selectdoc" for="escolaridade">Escolaridade</label>
+                        <select name="escolaridade" id="escolaridade">
+                            <option value="escolaridade">Ensino médio incompleto</option>
+                            <option value="escolaridade">Ensino médio completo</option>
+                            <option value="escolaridade">Ensino superior incompleto</option>
+                            <option value="escolaridade">Ensino superior completo</option>
+                            <option value="escolaridade">Pós-graduação</option>
+                            <option value="escolaridade">Mestrado</option>
+                            <option value="escolaridade">Doutorado</option>
+                        </select>
                     </div>
                 </div>
                 <div class="jobsubtitle">
@@ -78,55 +79,65 @@
                 </div>
                 <div class="job-endereço">
                     <div class="job-input">
-                        <input placeholder="*Rua">
-                        <label>
-                        </label>
+                        <input type="text" id="rua" name="rua" placeholder="*Rua" required>
+                        <label for="rua" class="hidden-label">Rua</label>
                     </div>
                 </div>
                 <div class="job-endereço1">
                     <div class="job-input">
-                        <input placeholder="*Complemento">
-                        <label>
-                        </label>
+                        <input type="text" id="complemento" name="complemento"  placeholder="*Complemento" required>
+                        <label for="complemento"  class="hidden-label">Complemento</label>
                     </div>
                 </div>
                 <div class="job-endereço2">
                     <div class="job-input">
-                        <input placeholder="*Número">
-                        <label>
-                        </label>
+                        <input type="text" id="numero" name="numero"  placeholder="*Número" required>
+                        <label for="numero"  class="hidden-label">Número</label>
                     </div>
                 </div>
                 <div class="job-endereço3">
                     <div class="job-input">
-                        <input placeholder="*Bairro">
-                        <label>
-                        </label>
+                        <input type="text" id="bairro" name="bairro"  placeholder="*Bairro" required>
+                        <label for="bairro"  class="hidden-label">Bairro</label>
                     </div>
                 </div>
                 <div class="job-endereço3">
                     <div class="job-input">
-                        <input placeholder="*Município">
-                        <label>
-                        </label>
+                        <input type="text" id="municipio" name="municipio"  placeholder="*Município" required>
+                        <label for="municipio"  class="hidden-label">Município</label>
                     </div>
                 </div>
                 <div class="job-endereço3">
                     <div class="job-input">
-                        <input placeholder="*País">
-                        <label>
-                        </label>
+                        <input type="text" id="pais" name="pais"  placeholder="*País" required>
+                        <label for="pais"  class="hidden-label">País</label>
                     </div>
                 </div>
                 <div class="jobsubtitle">
                     <h1>Disponibilidade de Horário</h1>
                 </div>
-                <div class="job-endereço1">
-                    <div class="job-input">
-                        <input placeholder="*Turno">
-                        <label>
-                        </label>
-                    </div>
+                <div class="checkbox">
+                    <p><strong>Marque uma ou mais opções.</strong></p>
+                    <input type="checkbox" id="manha" name="man">
+                    <label for="manha">Manhã</label><br>
+                    <input type="checkbox" id="tarde" name="tar">
+                    <label for="tarde">Tarde</label><br>
+                    <input type="checkbox" id="noite" name="noi">
+                    <label for="noite">Noite</label><br>
+                </div>
+                <div class="jobsubtitle">
+                    <h1>Tipo de Vaga</h1>
+                </div>
+                <div class="radio">
+                    <p><strong>Marque uma opção.</strong></p>
+                    <input type="radio" id="ADM" name="vagas" value="Administrativo">
+                    <label for="ADM">Administrativo</label><br>
+                    <input type="radio" id="ATEND" name="vagas" value="Atendimento">
+                    <label for="ATEND">Atendimento</label><br>
+                    <input type="radio" id="COZ" name="vagas" value="Cozinheiro">
+                    <label for="COZ">Cozinheiro</label><br>
+                    <input type="radio" id="MARK" name="vagas" value="Marketing">
+                    <label for="MARK">Marketing</label><br>
                 </div>
                 <div class="jobsubtitle2">
                     <h1>Vídeo de Apresentação</h1>
@@ -150,8 +161,6 @@
                 </div>
                 <input type="submit" id="submit" class="entrar" value="Entrar">
             </form>
-        </div>
-        <div>
         </div>
     </div>
 </body>
