@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Peixitos,comida,peixe">
+    <meta name="description" content="Restaurante de peixes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/peixitosminipng.png">
+    <link rel="stylesheet" type="text/css" href="css/formularios.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <title>Peixitos</title>
+    <script src="https://kit.fontawesome.com/1655d79f90.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="pageconfig">
+        <div class="jobtitle">
+            <h1>Faça parte da nossa equipe!</h1>
+        </div>
+        <div>
+            <form class="job" method="post">
+                <div class="jobsubtitle">
+                    <h1>Dados Pessoais</h1>
+                </div>
+                <div class="job-form">
+                    <div class="job-input">
+                        <input type="text" name="nome" id="nome" placeholder="*Nome" required aria-required="true">
+                        <label for="nome" class="hidden-label">Nome</label>
+                    </div>
+                </div>
+                <div class="job-form">
+                    <div class="job-input">
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="*Sobrenome" required
+                            aria-required="true">
+                        <label for="sobrenome" class="hidden-label">Sobrenome</label>
+                    </div>
+                </div>
+                <div class="job-form">
+                    <div class="job-input">
+                        <input type="text" name="cpf" id="cpf" placeholder="*CPF" pattern="^\d{11}$" required
+                            aria-required="true">
+                        <label for="cpf" class="hidden-label">CPF</label>
+                    </div>
+                </div>
+                <div class="job-form">
+                    <div class="job-input">
+                        <input type="date" name="nascimento" id="nascimento" placeholder="*Data de Nascimento" required
+                            aria-required="true">
+                        <label for="nascimento" class="hidden-label">Data de Nascimento</label>
+                    </div>
+                </div>
+                <div class="job-form">
+                    <div class="job-input">
+                        <input type="email" name="email" id="email" placeholder="*Email" required aria-required="true">
+                        <label for="email" class="hidden-label">Email</label>
+                    </div>
+                </div>
+                <div class="job-form">
+                    <div class="job-input">
+                        <input type="tel" id="cel" name="cel" placeholder="*Celular: (xx)xxxxx-xxxx"
+                            pattern="^\(\d{2}\)\d{5}-\d{4}$" required aria-required="true">
+                        <label for="cel" class="hidden-label">Celular:(xx)xxxxx-xxxx</label>
+                    </div>
+                </div>
+                <div class="job-form">
+                    <div class="job-input">
+                        <label class="selectdoc" for="escolaridade">Escolaridade</label>
+                        <select name="escolaridade" id="escolaridade" required aria-required="true">
+                            <option value="escolaridade">Ensino médio incompleto</option>
+                            <option value="escolaridade">Ensino médio completo</option>
+                            <option value="escolaridade">Ensino superior incompleto</option>
+                            <option value="escolaridade">Ensino superior completo</option>
+                            <option value="escolaridade">Pós-graduação</option>
+                            <option value="escolaridade">Mestrado</option>
+                            <option value="escolaridade">Doutorado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="jobsubtitle">
+                    <h1>Endereço</h1>
+                </div>
+                <div class="job-address-30">
+                    <div class="job-input">
+                        <input type="text" name="cep" id="cep" placeholder="*CEP: xxxxx-xxx" pattern="^\d{5}-\d{3}$"
+                            required aria-required="true">
+                        <label for="cep" class="hidden-label">CEP: xxxxx-xxx</label>
+                    </div>
+                </div>
+                <div class="job-address-30">
+                    <div class="job-input">
+                        <input type="text" id="rua" name="rua" placeholder="*Rua" required aria-required="true">
+                        <label for="rua" class="hidden-label">Rua</label>
+                    </div>
+                </div>
+                <div class="job-address-30">
+                    <div class="job-input">
+                        <input type="text" id="complemento" name="complemento" placeholder="*Complemento">
+                        <label for="complemento" class="hidden-label">Complemento</label>
+                    </div>
+                </div>
+                <div class="job-address-20">
+                    <div class="job-input">
+                        <input type="text" id="numero" name="numero" placeholder="*Número" required
+                            aria-required="true">
+                        <label for="numero" class="hidden-label">Número</label>
+                    </div>
+                </div>
+                <div class="job-address-20">
+                    <div class="job-input">
+                        <input type="text" id="bairro" name="bairro" placeholder="*Bairro" required
+                            aria-required="true">
+                        <label for="bairro" class="hidden-label">Bairro</label>
+                    </div>
+                </div>
+                <div class="job-address-20">
+                    <div class="job-input">
+                        <input type="text" id="municipio" name="municipio" placeholder="*Município" required
+                            aria-required="true">
+                        <label for="municipio" class="hidden-label">Município</label>
+                    </div>
+                </div>
+                <div class="job-address-20">
+                    <div class="job-input">
+                        <input type="text" id="pais" name="pais" placeholder="*País" required aria-required="true">
+                        <label for="pais" class="hidden-label">País</label>
+                    </div>
+                </div>
+                <div class="jobsubtitle">
+                    <h1>Disponibilidade de Horário</h1>
+                </div>
+                <div class="checkbox" required aria-required="true">
+                    <p><strong>Marque uma ou mais opções.</strong></p>
+                    <input type="checkbox" id="manha" name="man">
+                    <label for="manha">Manhã</label><br>
+                    <input type="checkbox" id="tarde" name="tar">
+                    <label for="tarde">Tarde</label><br>
+                    <input type="checkbox" id="noite" name="noi">
+                    <label for="noite">Noite</label><br>
+                </div>
+                <div class="jobsubtitle">
+                    <h1>Tipo de Vaga</h1>
+                </div>
+                <div class="radio">
+                    <p><strong>Marque uma opção.</strong></p>
+                    <input type="radio" id="ADM" name="vagas" value="Administrativo" required aria-required="true">
+                    <label for="ADM">Administrativo</label><br>
+                    <input type="radio" id="ATEND" name="vagas" value="Atendimento">
+                    <label for="ATEND">Atendimento</label><br>
+                    <input type="radio" id="COZ" name="vagas" value="Cozinheiro">
+                    <label for="COZ">Cozinheiro</label><br>
+                    <input type="radio" id="MARK" name="vagas" value="Marketing">
+                    <label for="MARK">Marketing</label><br>
+                </div>
+                <div class="jobsubtitle2">
+                    <h1>Vídeo de Apresentação</h1>
+                    <p>Instruções para o vídeo:</p>
+                    <ol>
+                        <li>O vídeo deve ter no máximo 30 segundos.</li>
+                        <li>Deve ser gravado com o celular na vertical.</li>
+                        <li>Seja você mesmo: converse como se estivesse com amigos, sem nervosismo!</li>
+                        <li>Conte-nos seus hobbies: O que você gosta de fazer no seu tempo livre? Queremos te conhecer
+                            melhor!</li>
+                        <li>Por que você quer se juntar ao Peixitos: Diga-me o que te inspira a fazer parte de nossa
+                            equipe.
+                        </li>
+                        <li>Fale sobre seus sonhos e estudos: O que você gostaria de alcançar no futuro?</li>
+                        <li>Divirta-se e sorria: Aproveite o processo e mostre sua melhor atitude! Queremos ver você
+                            brilhar!</li>
+                    </ol>
+                    <p class="aviso">Alguns dispositivos não permitem a gravação de vídeo do formulário, anexe um vídeo
+                        gravado anteriormente.</p>
+                    <p class="aviso">Formatos suportados: .mp4, .mov, .avi (máximo 50MB)</p>
+                    <input type="file" name="video" id="video" accept=".mp4,.mov,.avi" max="52428800" required
+                        aria-required="true">
+                </div>
+                <input type="submit" id="submit" class="entrar" value="Enviar Candidatura">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

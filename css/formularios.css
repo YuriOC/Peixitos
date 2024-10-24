@@ -1,0 +1,294 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.cadastroconfig, .pageconfig {
+    width: 100%;
+    max-width: 960px;
+    padding: 0 15px;
+    margin: auto;
+  }
+
+.cadastroconfig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 3.75rem 0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 50px;
+}
+
+.form-login {
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    flex-direction: column;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+.buttonconfig {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 15px;
+    width: 150px;
+    height: 50px;
+}
+
+.button span {
+    margin-left: 10px;
+    font-size: 14px
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+}
+
+.google {
+    background-image: url(../images/google.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background-image: url(../images/facebook.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.apple {
+    background-image: url(../images/apple.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.email {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+fieldset{
+    border:none;
+}
+
+
+.form-input {
+    position: relative;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.form-input input {
+    border:none;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    width: 100%;
+    height: 40px;
+}
+
+.form-doc {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.form-checks {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    border: none;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.form-checks label {
+    padding-left: 15px;
+}
+
+.form-checks input {
+    margin: 2px 0px 0px 0px;
+}
+
+.form-doc-config {
+    width: 40%;
+    padding: 0px 12px 12px 0px;
+}
+
+.form-doc-config-t {
+    width: 60%;
+    padding: 0px 12px 12px 12px;
+}
+
+.docs-s {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.docs-t {
+    width: 100%;
+}
+
+.docs-s select{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    padding: 15px 15px 15px 0px;
+    cursor: pointer;
+
+}
+
+.docs-t input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    padding: 16px 0px 16px 16px;
+
+}
+
+
+.entrar {
+    display: flex;
+    margin: 30px auto;
+    padding: 20px 50px;
+    justify-content: center;
+}
+
+.selectdoc {
+    top: -15px;
+    position: absolute;
+    font-size: 12px;
+}
+
+.oculto {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.form-input-docs {
+    display: flex;
+}
+
+.hidden-label {
+    display: none;
+    position: absolute;
+    top:-15px;
+    font-size: 12px;
+}
+
+input:not(:placeholder-shown)+.hidden-label {
+    display: block;
+}
+
+.jobtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.job {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+}
+
+.job-form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.job-input {
+    width: 100%;
+    padding: 15px;
+}
+
+.job-input input {
+    border:none;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    width: 100%;
+    max-width: 100%;
+    height: 40px;
+}
+
+.job-address-50, .job-address-30, .job-address-20, .job-address-33 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.job-address-50 {width: 50%;}
+.job-address-30 {width: 30%;}
+.job-address-20 {width: 20%;}
+.job-address-33 {width: 33%;}
+
+.jobsubtitle {
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.jobsubtitle2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.radio input, .checkbox input{
+    margin-bottom: 10px;
+}
+
+.job-input select{
+    border: none;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    padding: 15px 15px 15px 0px;
+    cursor: pointer;
+}
+
+.visually-hidden{
+    display:none;
+}
