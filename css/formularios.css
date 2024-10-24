@@ -146,12 +146,12 @@ fieldset{
 
 .form-doc-config {
     width: 40%;
-    padding: 12px 12px 12px 0px;
+    padding: 0px 12px 12px 0px;
 }
 
 .form-doc-config-t {
     width: 60%;
-    padding: 12px;
+    padding: 0px 12px 12px 12px;
 }
 
 .docs-s {
@@ -189,29 +189,8 @@ fieldset{
     justify-content: center;
 }
 
-.form-email {
-    display: none;
-    position: absolute;
-    top:-15px;
-    font-size: 12px;
-}
-
-.form-password {
-    display: none;
-    position: absolute;
-    top:-15px;
-    font-size: 12px
-}
-
-.textdoc {
-    display: none;
-    position: absolute;
-    top:-3px;
-    font-size: 12px
-}
-
 .selectdoc {
-    top: -3px;
+    top: -15px;
     position: absolute;
     font-size: 12px;
 }
@@ -226,16 +205,11 @@ fieldset{
     display: flex;
 }
 
-input:not(:placeholder-shown)+.form-email {
-    display: block;
-}
-
-input:not(:placeholder-shown)+.form-password {
-    display: block;
-}
-
-input:not(:placeholder-shown)+.textdoc {
-    display: block;
+.hidden-label {
+    display: none;
+    position: absolute;
+    top:-15px;
+    font-size: 12px;
 }
 
 input:not(:placeholder-shown)+.hidden-label {
@@ -306,14 +280,6 @@ input:not(:placeholder-shown)+.hidden-label {
 
 .radio input, .checkbox input{
     margin-bottom: 10px;
-}
-
-
-.hidden-label {
-    display: none;
-    position: absolute;
-    top:-15px;
-    font-size: 12px;
 }
 
 .job-input select{
